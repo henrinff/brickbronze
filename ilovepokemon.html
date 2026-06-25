@@ -1060,6 +1060,7 @@ button {
     }
 
     async function playTurn(moveIndex) {
+      console.log('move clicked', moveIndex);
       if (state.over || state.lock) return;
       state.lock = true;
       renderMoves();
