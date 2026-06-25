@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://api.fontshare.com" />
   <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    
     :root,
     [data-theme="light"] {
       --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
@@ -475,6 +477,65 @@ body::before {
   mix-blend-mode: multiply;
   z-index: 9999;
 }
+
+    body, button, input, select, textarea {
+  font-family: 'Press Start 2P', monospace !important;
+  letter-spacing: 0;
+}
+
+.brand h1,
+.status-name,
+.type-tag,
+.pill-btn,
+.mini-btn,
+.move-btn,
+.section-head h2,
+.section-head h3,
+.picker-name,
+.event-item,
+.stats-row,
+.message-box p {
+  font-family: 'Press Start 2P', monospace !important;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.panel,
+.status-card,
+.message-box,
+.picker-card,
+.event-item,
+.stats-row,
+.move-btn,
+.mini-btn,
+.pill-btn {
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.hp-bar {
+  height: 10px;
+  border-radius: 2px;
+  image-rendering: pixelated;
+}
+
+.hp-fill {
+  border-radius: 0;
+}
+
+.type-tag {
+  border-radius: 3px;
+  font-size: 9px;
+  padding: 4px 6px;
+}
+
+button {
+  border-width: 2px;
+  box-shadow: none;
+}
+
+    
+    
   </style>
 </head>
 <body>
